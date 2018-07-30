@@ -5,6 +5,7 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { JokerComponent } from './joker/joker.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { SimpleDragComponent } from './simple-drag/simple-drag.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -12,6 +13,6 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [JokerComponent, DragDropComponent]
+  declarations: [JokerComponent, DragDropComponent, SimpleDragComponent]
 })
 export class SharedModule { }
