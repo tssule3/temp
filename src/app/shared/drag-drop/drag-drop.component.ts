@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drag-drop.component.css']
 })
 export class DragDropComponent implements OnInit {
-  
+  droppedData: string;
   constructor() { }
 
   ngOnInit() {
   }
 
+  dragEnd(event) {
+    console.log('Element was dragged', event);
+  }
 }
